@@ -39,8 +39,8 @@
                                 x:Name="HeightPointer"
                                 IsInteractive="True"
                                 Position="Cross"
+                                Value="{Binding BMI.Height}"
                                 >
-                                <!--Value="{Binding BMI.Height}"-->
                                 <gauge:LinearContentPointer.Content>
                                     <Grid HeightRequest="25" WidthRequest="50">
                                         <RoundRectangle CornerRadius="5" Fill="#ff0074E3" />
@@ -75,8 +75,8 @@
                             <gauge:LinearContentPointer
                                 x:Name="WeightPointer"
                                 IsInteractive="True"
+                                Value="{Binding BMI.Weight}"
                                 Position="Cross">
-                                <!--Value="{Binding BMI.Weight}"-->
                                 <gauge:LinearContentPointer.Content>
                                     <Grid HeightRequest="25" WidthRequest="50">
                                         <RoundRectangle CornerRadius="5" Fill="#ff0074E3" />
@@ -100,8 +100,8 @@
                 <VerticalStackLayout>
                     <Label
                         FontSize="Title"
+                    Text="{Binding BMI.ResultText}"
                         HorizontalOptions="Center"/>
-                    <!--Text="{Binding BMI.ResultText}"-->
                     <gauge:SfRadialGauge Margin="0,-55,0,-55">
                         <gauge:SfRadialGauge.Axes>
                             <gauge:RadialAxis
@@ -186,8 +186,8 @@
                                         KnobSizeUnit="Pixel"
                                         NeedleEndWidth="15"
                                         NeedleLength="0.6"
+                                    Value="{Binding BMI.Result}"
                                         NeedleStartWidth="2" />
-                                    <!--Value="{Binding BMI.Result}"-->
                                 </gauge:RadialAxis.Pointers>
 
                             </gauge:RadialAxis>
